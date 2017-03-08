@@ -2,21 +2,118 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Nova Flat', cursive;
+	font-size: 20px;
+	line-height: 30px;
+	background-image: url(../images/background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100%;
+	position: relative;
+}
+
 header {
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
+	overflow: auto;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .7);
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	border-color: #B9314F;
+}
+
+h1 {
+	padding: 30px;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 50px;
+	color: #B9314F;
+}
+
+#sign {
+	width: 450px;
+	height: 150px;
+	border-style: solid;
+	border-radius: 40px;
 }
 
 .container {
 	margin: 0 auto;
 	width: 960px;
+	overflow: auto;
 }
 
-#helpAndTrivia {
+#instructions {
 	float: left;
+	overflow: auto;
+	width: 400px;
+	background: #B9314F;
+	color: #FCF7F8;
+	padding: 30px;
+	height: 510px;
+	margin-bottom: 120px;
+}
+
+#title {
+	text-align: center;
+}
+
+p {
+	font-size: 12px;
+	line-height: 18px;
 }
 
 #gameArea {
 	float: right;
 	text-align: center;
+	overflow: auto;
+	width: 530px;
+	background: #FFF;
+	color: #0C0F0A;
+	border: solid;
+	border-width: 2px;
+	border-color: #B9314F;
+	padding: 30px;
+	height: 510px;
+	font-family: 'Chelsea Market', cursive;
+	margin-bottom: 120px;
+}
+
+#score {
+	display: inline-block;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .7);
+	border-style: solid;
+	border-width: 2px 0 0 0;
+	border-color: #B9314F;
+	position: absolute;
+	bottom: 0;
+}
+
+h4 {
+	font-size: 12px;
+	padding: 12px;
+	color: #0C0F0A;
+}
+
+a {
+	color: #0C0F0A;
+	text-decoration: none;
+}
+
+a:hover {
+	background: #B9314F;
+	color: #FCF7F8;
 }

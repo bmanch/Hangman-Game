@@ -31,7 +31,7 @@ var theCurrentScore = document.getElementById("score");
 
 var userLetter = document.getElementById("letters");
 
-var guesses = 10;
+var guesses = 12;
 
 var score = 0;
 
@@ -41,14 +41,13 @@ var letterAlreadyUsed = "";
 
 function renderWord() {
 	var randomNumber = Math.floor(Math.random() * 10);
-	console.log(randomNumber);
 	randomNumber = randomNumber.toString();
 	userLetter.textContent = "";
 
 	if ((randomNumber === usedNumbers[0]) || (randomNumber === usedNumbers[1]) || (randomNumber === usedNumbers[2]) || (randomNumber === usedNumbers[3]) || (randomNumber === usedNumbers[4]) || (randomNumber === usedNumbers[5]) || (randomNumber === usedNumbers[6]) || (randomNumber === usedNumbers[7]) || (randomNumber === usedNumbers[8]) || (randomNumber === usedNumbers[9]) || (randomNumber === usedNumbers[10]) || (randomNumber === usedNumbers[11])) {
 
 		if (usedNumbers.length === 11) {
-			alert("game over");
+			theWord.textContent = "Well, that's all the words. To play again, just refresh the page.";
 		}
 
 		else {
@@ -58,7 +57,6 @@ function renderWord() {
 	
 	else  {
 		currentWord = wordBankArray[randomNumber];
-		console.log(currentWord);
 		usedNumbers += randomNumber + ",";
 		usedNumbers = usedNumbers.split(",");
 
@@ -69,7 +67,7 @@ function renderWord() {
 			}
 			blankWord = blankLetters.split(",", 5);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			letterAlreadyUsed = "";
 			
@@ -143,7 +141,7 @@ function renderWord() {
 			}
 			blankWord = blankLetters.split(",", 10);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8] + blankWord[9];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			letterAlreadyUsed = "";
 			
@@ -243,7 +241,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 12);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8] + blankWord[9] + blankWord[10] + blankWord[11];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -357,7 +355,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 11);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8] + blankWord[9] + blankWord[10];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -460,7 +458,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 10);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8] + blankWord[9];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -557,7 +555,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 8);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -647,7 +645,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 14);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8] + blankWord[9] + blankWord[10] + blankWord[11] + blankWord[12] + blankWord[13];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -758,7 +756,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 17);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8] + blankWord[9] + blankWord[10] + blankWord[11] + blankWord[12] + blankWord[13] + blankWord[14] + blankWord[15] + blankWord[16];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -882,7 +880,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 9);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6] + blankWord[7] + blankWord[8];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -983,7 +981,7 @@ function renderWord() {
 
 			blankWord = blankLetters.split(",", 7);
 			theWord.textContent = blankWord[0] + blankWord[1] + blankWord[2] + blankWord[3] + blankWord[4] + blankWord[5] + blankWord[6];
-			guesses = 10	
+			guesses = 12	
 			theGuessNumber.textContent = guesses;
 			userLetter.textContent = "";
 			letterAlreadyUsed = "";
@@ -1067,6 +1065,8 @@ function renderWord() {
 	}
 };
 
-renderWord();
+document.onkeyup = function(event) {
+	renderWord();
+}
 
 

@@ -6,33 +6,54 @@
 	<title>(Bad) Hollywood Hangman</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Nova+Flat" rel="stylesheet">
 </head>
 <body>
 
     <header>
-  	    <h1>(Bad) Hollywood Hangman</h1>
+  	    <h1>(Bad)</h1>
+        <img id="sign" src="assets/images/sign.jpg" alt="HollyWood Sign">
+        <h1>HANGMAN</h1>
     </header>
 
     <div class="container">
-        <div id="helpAndTrivia">
-        	<div>stuff will go here</div>
+        <div id="instructions">
+        	<div id="title">Instructions</div>
+            <br>
+            <div>Press any key to start the game!</div>
+            <br>
+            <p>Once you start the game, a word or words (in blanks) will pop up under "Here's your word!".</p>
+            <br>
+            <p>Start guessing letters. If you run out of guesses, a new word or words will automatically pop up.</p>
+            <br>
+            <p>If you guess the word(s) correctly, then you'll get a win and a new word or words will automatically pop up.</p>
+            <br>
+            <p>Some of the words might actually be two words, but they will not be separated by spaces. For example, the words "HEY YOU" would look like "_ _ _ _ _ _ ". Once filled in, the finished product would look like "HEYYOU".</p>
+            <br>
+            <p>The max number of wins is 10. See if you can get there!</p>
         </div>
         <div id="gameArea">
-        	<div>Press any key to get started!</div>
+        	<div>(Bad) Hollywood Hangman</div>
         	<br>
         	<div>Wins: <div id="score"></div></div>
         	<br>
+            <div>Here's your word!</div>
+            <br>
         	<div id="theWord"></div>
             <br>
         	<div>Number of Guesses Remaining</div>
         	<br>
-        	<div id="numberOfGuesses">#</div>
+        	<div id="numberOfGuesses"></div>
         	<br>
         	<div>Letters Already Guessed</div>
         	<br>
         	<div id="letters"></div>
         </div>
     </div>
+
+    <footer>
+        <h4>Enjoyed the experience? See more work by the same developer <a href="https://bmanch.github.io/Bootstrap-Portfolio/" target="blank">here</a>.</h4>
+    </footer>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 
